@@ -3,59 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz Time - Canal Oficial</title>
+  <title>Quiz Time - Kristian</title>
   <style>
     body {
-      background-color: #0f0f1a;
-      color: #ffffff;
-      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
       text-align: center;
+    }
+
+    header {
       padding: 20px;
     }
+
     h1 {
-      font-size: 3em;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff;
+      color: red;
+      font-size: 48px;
+      margin: 0;
     }
-    .video {
-      margin-top: 20px;
-    }
-    .button {
-      margin: 20px auto;
-      padding: 15px 25px;
+
+    p {
+      margin-top: 10px;
+      color: #ccc;
       font-size: 18px;
-      color: #fff;
-      background-color: #1e90ff;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
     }
-    .button:hover {
-      background-color: #00bfff;
+
+    iframe {
+      margin-top: 40px;
+      width: 90%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+    }
+
+    .paypal-button {
+      display: inline-block;
+      margin: 30px auto;
+      background-color: #0070ba;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .paypal-button:hover {
+      background-color: #005c9c;
     }
   </style>
 </head>
 <body>
-  <h1>Bienvenidos a Quiz Time</h1>
-  <p>Explora mi canal, mira los últimos videos y apóyame si te gusta mi contenido.</p>
+  <header>
+    <h1>Mis Videos</h1>
+    <p>Canal de Kristian - Suscribite y apoyá</p>
+  </header>
 
-  <div class="video">
-    <iframe width="100%" height="315"
-      src="https://www.youtube.com/embed?listType=user_uploads&list=quiztime-e9r"
-      frameborder="0" allowfullscreen></iframe>
-  </div>
+  <iframe 
+    src="https://www.youtube.com/embed/VhqT3ydpUi8" 
+    title="Último video de YouTube" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
 
-  <a class="button" href="https://www.youtube.com/@quiztime-e9r" target="_blank">
-    Suscribirse al canal
+  <br/><br/>
+  <a class="paypal-button" href="https://www.paypal.me/kristianmemo" target="_blank">
+    Donar con PayPal
   </a>
-
-  <form action="https://www.paypal.com/donate" method="post" target="_blank">
-    <input type="hidden" name="business" value="kristianmemo756@gmail.com" />
-    <input type="hidden" name="currency_code" value="USD" />
-    <input type="submit" value="Apóyame por PayPal"
-      class="button" style="background-color: #ffc439; color: black;" />
-  </form>
 </body>
 </html>
