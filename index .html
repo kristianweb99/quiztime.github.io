@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Time - Canal Oficial</title>
+  <style>
+    body {
+      background-color: #0f0f1a;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+    .video {
+      margin-top: 20px;
+    }
+    .button {
+      margin: 20px auto;
+      padding: 15px 25px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #1e90ff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #00bfff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenidos a Quiz Time</h1>
+  <p>Explora mi canal, mira los últimos videos y apóyame si te gusta mi contenido.</p>
+
+  <div class="video">
+    <iframe width="100%" height="315"
+      src="https://www.youtube.com/embed?listType=user_uploads&list=quiztime-e9r"
+      frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <a class="button" href="https://www.youtube.com/@quiztime-e9r" target="_blank">
+    Suscribirse al canal
+  </a>
+
+  <form action="https://www.paypal.com/donate" method="post" target="_blank">
+    <input type="hidden" name="business" value="kristianmemo756@gmail.com" />
+    <input type="hidden" name="currency_code" value="USD" />
+    <input type="submit" value="Apóyame por PayPal"
+      class="button" style="background-color: #ffc439; color: black;" />
+  </form>
+</body>
+</html>
